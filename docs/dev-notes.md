@@ -115,3 +115,69 @@ Initial files added:
      ```
 
    - **Description**: Documents notes on how the project was set up and any problems encountered, providing additional context and guidance for developers working on the project.
+
+## Statiq.Web Quickstart
+
+[Statiq - About Statiq Web](https://www.statiq.dev/web)
+
+1. Install Statiq.Web
+
+   ```sh
+   cd src/StatiqConsole/
+   dotnet add package Statiq.Web --version 1.0.0-beta.60
+   ```
+
+2. Create Bootstrapper
+
+    ```csharp
+    // See https://aka.ms/new-console-template for more information
+    Console.WriteLine("Bootstrapping Statiq.Web!");
+
+    await Bootstrapper.Factory
+                    .CreateWeb(args)
+                    .RunAsync();
+    ```
+
+3. Add Content
+
+   ```sh
+   mkdir input && cd input && touch index.md
+   ```
+
+   Add the following to `index.md`
+
+   ```md
+   ---
+   Title: My First Statiq page
+   ---
+   # Hello World
+   Hello from my first Statiq page.   
+   ```
+
+4. Run the Application
+
+   ```sh
+   dotnet run
+   ```
+
+5. Preview the Application
+
+   ```sh
+   dotnet run -- preview
+   ```
+
+   Preview the application at `http://localhost:5080`
+
+   ![Screenshot of Statiq web hello world page](img/statiqweb-hello-world.png "Statiq Web Hello World")
+
+6. Add a theme
+
+   ```sh
+   cd src/StaticConsole/
+   git clone https://github.com/statiqdev/CleanBlog.git theme
+   rm -rf theme/.git
+   ```
+
+   Rerun the application and preview it.
+
+   ![Screenshot of Statiq web clean blog theme](img/statiqweb-clean-blog.png "Statiq Web Clean Blog")

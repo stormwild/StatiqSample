@@ -482,3 +482,9 @@ $RECYCLE.BIN/
 
 # Vim temporary swap files
 *.swp
+
+# Statiq.Web generated files and folder
+output/
+temp/
+wwwroot/
+cache/

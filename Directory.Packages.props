@@ -4,4 +4,7 @@
   </PropertyGroup>
   <ItemGroup>
   </ItemGroup>
+  <ItemGroup>
+    <PackageVersion Include="Statiq.Web" Version="1.0.0-beta.60" />
+  </ItemGroup>
 </Project>
