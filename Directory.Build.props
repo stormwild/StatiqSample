@@ -1,0 +1,23 @@
+<Project>
+  <!-- See https://aka.ms/dotnet/msbuild/customize for more details on customizing your build -->
+  <PropertyGroup>
+    <!-- Treat all warnings as errors -->
+    <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
+
+    <!-- Enable nullable reference types -->
+    <Nullable>enable</Nullable>
+
+    <!-- Enable implicit usings -->
+    <ImplicitUsings>enable</ImplicitUsings>
+
+    <!-- Enable deterministic builds -->
+    <ContinuousIntegrationBuild>true</ContinuousIntegrationBuild>
+
+    <!-- Enable analyzers -->
+    <EnableNETAnalyzers>true</EnableNETAnalyzers>
+
+    <!-- Enable code analysis -->
+    <RunAnalyzersDuringBuild>true</RunAnalyzersDuringBuild>
+    <RunAnalyzersDuringLiveAnalysis>true</RunAnalyzersDuringLiveAnalysis>
+  </PropertyGroup>
+</Project>
