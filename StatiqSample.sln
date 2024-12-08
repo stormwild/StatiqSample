@@ -5,15 +5,35 @@ VisualStudioVersion = 17.0.31903.59
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{5A7EE4B1-4821-4804-9332-F3970C29F929}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StatiqConsole", "src\StatiqConsole\StatiqConsole.csproj", "{81D922D4-00D6-4F5D-9D4E-B901E7E3C31C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "StatiqConsole", "src\StatiqConsole\StatiqConsole.csproj", "{81D922D4-00D6-4F5D-9D4E-B901E7E3C31C}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{0957000C-9C8E-400A-8348-8B513E511795}"
+	ProjectSection(SolutionItems) = preProject
+		.editorconfig = .editorconfig
+		.gitignore = .gitignore
+		Directory.Build.props = Directory.Build.props
+		Directory.Packages.props = Directory.Packages.props
+		global.json = global.json
+		nuget.config = nuget.config
+		README.md = README.md
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "docs", "docs", "{44B10D30-34C7-4B3C-83DE-F9CFF0302CFA}"
+	ProjectSection(SolutionItems) = preProject
+		docs\build-props.md = docs\build-props.md
+		docs\dev-notes.md = docs\dev-notes.md
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "img", "img", "{1006AC5B-9957-42B2-9D09-A327C1C44F57}"
+	ProjectSection(SolutionItems) = preProject
+		docs\img\statiqweb-clean-blog.png = docs\img\statiqweb-clean-blog.png
+		docs\img\statiqweb-hello-world.png = docs\img\statiqweb-hello-world.png
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
 		Release|Any CPU = Release|Any CPU
-	EndGlobalSection
-	GlobalSection(SolutionProperties) = preSolution
-		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
 		{81D922D4-00D6-4F5D-9D4E-B901E7E3C31C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
@@ -21,7 +41,15 @@ Global
 		{81D922D4-00D6-4F5D-9D4E-B901E7E3C31C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{81D922D4-00D6-4F5D-9D4E-B901E7E3C31C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{81D922D4-00D6-4F5D-9D4E-B901E7E3C31C} = {5A7EE4B1-4821-4804-9332-F3970C29F929}
+		{44B10D30-34C7-4B3C-83DE-F9CFF0302CFA} = {0957000C-9C8E-400A-8348-8B513E511795}
+		{1006AC5B-9957-42B2-9D09-A327C1C44F57} = {44B10D30-34C7-4B3C-83DE-F9CFF0302CFA}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {DA6FF858-2706-4DBD-9AE3-3DB3A9F44580}
 	EndGlobalSection
 EndGlobal
